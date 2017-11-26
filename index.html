@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href="assets/css/style.css">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='jumbotron headerBack'>
+            <h1 class='text-center'>Tic-Tac-Toe</h1>
+        </div>
+        <div class='row'>
+            <div class='col-xs-5'>
+                <div class='panel panel-primary'>
+                    <div class='panel-heading'>
+                        <h4>Game Board</h4>
+                    </div>
+                    <div id='board' class='panel-body'>
+                        <div class='gameSquare' id='square1'></div>
+                        <div class='gameSquare' id='square2'></div>
+                        <div class='gameSquare' id='square3'></div>
+                        <div class='gameSquare' id='square4'></div>
+                        <div class='gameSquare' id='square5'></div>
+                        <div class='gameSquare' id='square6'></div>
+                        <div class='gameSquare' id='square7'></div>
+                        <div class='gameSquare' id='square8'></div>
+                        <div class='gameSquare' id='square9'></div>
+                    </div>
+                    <div id='turn' class='text-center'>
+                        <h3>X</h3>
+                    </div>
+                    <div class='mB text-center'>
+                        <button id='newGame' onclick='newGame()'>New Game</button>
+                    </div>
+                </div>
+            </div>
+            <div class='col-xs-5 col-xs-offset-2'>
+                <div class='panel panel-primary'>
+                    <div class='panel-heading'>
+                        <h4>Score</h4>
+                    </div>
+                    <div class='panel-body'>
+                        <div id='wins'>
+                        </div>
+                    </div>
+                </div>
+                <div class='panel panel-primary'>
+                    <div class='panel-heading'>
+                        <h4>Result</h4>
+                    </div>
+                    <div class='panel-body'>
+                        <div id='result'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='assets/javascript/tic-tac.js'></script>
+</body>
+
+</html>
